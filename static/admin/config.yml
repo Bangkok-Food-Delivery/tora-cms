@@ -16,8 +16,8 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
+  - name: "english"
+    label: "english"
     files:
       - file: "content/_index.md"
         label: "Home Page"
@@ -35,9 +35,18 @@ collections:
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
-      - file: "content/about/index.md"
+      - file: "content/english/about.md"
         label: "About"
         name: "about"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
+          - { 
+              label: "hero_section",
+              name: "hero_section",
+              widget: "object",
+              fields:
+                [
+                    { label: "bg_img", name: "bg_img", widget: "image"},
+                    { label: "hero_text", name: "heading", widget: "text"},
+                ] }
