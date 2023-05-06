@@ -53,8 +53,8 @@ collections:
             }
 
       - file: "content/english/promotions.md"
-        label:
-        name:
+        label: "Promotions"
+        name: "promotions"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "description", name: "description", widget: "string" }
