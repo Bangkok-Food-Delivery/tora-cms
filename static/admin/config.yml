@@ -64,7 +64,7 @@ collections:
               widget: "object",
               fields: 
                 [
-                  {label: "enable", name: "enable", widget: "boolena", default: true}  
+                  {label: "enable", name: "enable", widget: "boolean", default: true}  
                 ]
             }
 
