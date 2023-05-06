@@ -51,25 +51,23 @@ collections:
                     { label: "hero_text", name: "heading", widget: "text"},
                 ] 
             }
+
+      - file: "content/english/promotions.md"
+        label:
+        name:
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "description", name: "description", widget: "string" }
+          - {
+              label: "promotions",
+              name: "promotions",
+              widget: "object",
+              fields: 
+                [
+                  {label: "enable", name: "enable", widget: "boolena", default: true}  
+                ]
+            }
+
      
 
 
-- file: "content/english/promotions.md"
-  label: "Promotions"
-  name: "promotions"
-  fields:
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "description", name: "description", widget: "string" }
-     - label: "Promotions"
-       name: "promotions"
-       widget: "object"
-       fields:
-        - {label: "enable", name: "enable", widget: "boolean", default: true}
-          - label: "promo_items"
-            name: "promo_items"
-            widget: "object"
-            fields: 
-              - { label: "title", name: "title", widget: "string"}
-              - { label: "img", name: "img", widget: "image"}
-              - { label: "date", name: "date", widget: "string"}
-              - { label: "btn_link", name: "btn_link", widget: "string"}
