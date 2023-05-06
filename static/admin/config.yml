@@ -49,4 +49,22 @@ collections:
                 [
                     { label: "bg_img", name: "bg_img", widget: "image"},
                     { label: "hero_text", name: "heading", widget: "text"},
+                ] 
+            }
+      - file: "content/english/promotions.md"
+        label: "Promotions"
+        name: "promotions"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
+          - { 
+              label: "promo_items",
+              name: "promo_items",
+              widget: "object",
+              fields:
+                [
+                    { label: "title", name: "title", widget: "string"},
+                    { label: "img", name: "img", widget: "image"},
+                    { label: "date", name: "date", widget: "string"},
+                    { label: "btn_link", name: "btn_link", widget: "string"},
                 ] }
