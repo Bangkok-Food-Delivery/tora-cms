@@ -55,19 +55,18 @@ collections:
       - file: "content/english/promotions.md"
         label: "Promotions"
         name: "promotions"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "description", name: "description", widget: "string" }
-          - {
-              label: "promotions",
-              name: "promotions",
-              widget: "object",
-              fields: 
-                [
-                  {label: "enable", name: "enable", widget: "boolean", default: true}  
-                ]
-            }
+          - label: "promotions"
+            name: "promotions"
+            widget: "object"
+            fields:
+              - {label: "enable", name: "enable", widget: "boolean", default: true}
+              - label: "promo_items"
+                name: "promo_items"
+                widget: "object"
+                fields: 
+                  - {label: "title", name: "title", widget: "string"}
+                  - {label: "img", name: "img", widget: "image"}
+                  - {label: "date", name: "date", widget: "string"}
 
-     
 
 
