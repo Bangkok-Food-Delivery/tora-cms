@@ -19,15 +19,54 @@ collections:
   - name: "english"
     label: "english"
     files:
-      - file: "site/content/products/promotions.md"
-        label: "Promotions Page"
-        name: "promotions"
+      - file: "content/_index.md"
+        label: "Home Page"
+        name: "home"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Promotions, name: promotions, widget: object, fields: [{label: promo_items, name: promo_items, widget: object, fields: [{label: title, name: title, widget: string}, {label: img, name: img, widget: image}, {label: date, name: date, widget: string}, {label: btn_link, name: btn_link, widget: string},]}]}
-             
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Blurb", name: "blurb", widget: "text" }
+          - {
+              label: "Section",
+              name: "section",
+              widget: "object",
+              fields:
+                [
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Text", name: "text", widget: "text" },
+                ],
+            }
+      - file: "content/english/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "text" }
+          - { 
+              label: "hero_section",
+              name: "hero_section",
+              widget: "object",
+              fields:
+                [
+                    { label: "bg_img", name: "bg_img", widget: "image"},
+                    { label: "hero_text", name: "heading", widget: "text"},
+                ] 
+            }
+
+      - file: "content/english/promotions.md"
+        label: "Promotions"
+        name: "promotions"
+          - label: "promotions"
+            name: "promotions"
+            widget: "object"
+            fields:
+              - {label: "enable", name: "enable", widget: "boolean", default: true}
+              - label: "promo_items"
+                name: "promo_items"
+                widget: "object"
+                fields: 
+                  - {label: "title", name: "title", widget: "string"}
+                  - {label: "img", name: "img", widget: "image"}
+                  - {label: "date", name: "date", widget: "string"}
+
 
 
