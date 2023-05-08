@@ -40,4 +40,5 @@ collections:
         name: "promotions"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "text" }
+          - {label: "Promotions", name: "promotions", widget: "object", fields: [{label: "promo_items", name: "promo_items", widget: "object", fields: [{label: "title", name: "title", widget: "string"}, {label: "img", name: "img", widget: "image"}, {label: "date", name: "date", widget: "string"}, {label: "btn_link", name: "btn_link", widget: "string"},]}]}
+         
