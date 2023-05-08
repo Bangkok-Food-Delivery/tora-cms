@@ -7,6 +7,11 @@ collections:
   - name: "english"
     label: "english"
     files:
+      - file: "content/index.md"
+        label: "Home Page"
+        name: "home page"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
       - file: "content/promotions.md"
         label: "Promotions Page"
         name: "promotions"
