@@ -35,9 +35,9 @@ collections:
                   { label: "Text", name: "text", widget: "text" },
                 ],
             }
-      - file: "content/english/prmotions.md"
-        label: "About"
-        name: "about"
+      - file: "content/english/promotions.md"
+        label: "Promotions"
+        name: "promotions"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "text" }
