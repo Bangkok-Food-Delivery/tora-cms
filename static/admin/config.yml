@@ -19,15 +19,13 @@ collections:
   - name: "english"
     label: "english"
     files:
-      - file: "/content/english/promotions.md"
+      - file: "content/english/promotions.md"
         label: "Promotions Page"
         name: "promotions"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Promotions, name: promotions, widget: object, fields: [{label: promo_items, name: promo_items, widget: object, fields: [{label: title, name: title, widget: string}, {label: img, name: img, widget: image}, {label: date, name: date, widget: string}, {label: btn_link, name: btn_link, widget: string},]}]}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Promotions", name: "promotions", widget: "object", fields: [{label: "promo_items", name: "promo_items", widget: "object", fields: [{label: "title", name: "title", widget: "string"}, {label: "img", name: "img", widget: "image"}, {label: "date", name: "date", widget: "string"}, {label: "btn_link", name: "btn_link", widget: "string"},]}]}
              
 
 
