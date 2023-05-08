@@ -19,9 +19,9 @@ collections:
   - name: "english"
     label: "english"
     files:
-      - file: "content/english/promotions.md"
-        label: "Promotions"
-        name: "promotions"
+    file: "content/english/promotions.md"
+    label: "Promotions"
+    name: "promotions"
           - label: "promotions"
             name: "promotions"
             widget: "object"
