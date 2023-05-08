@@ -19,7 +19,7 @@ collections:
   - name: "english"
     label: "english"
     files:
-      - file: "content/english/promotions.md"
+      - file: "/content/english/promotions.md"
         label: "Promotions Page"
         name: "promotions"
         fields:
